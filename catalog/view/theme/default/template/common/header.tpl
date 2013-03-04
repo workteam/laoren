@@ -143,7 +143,7 @@ DD_belatedPNG.fix('#logo img');
               <!--<li> <a href="?route=news/allnews"><?php echo $mlang["news"]; ?></a>  </li>   -->
               <li> <a href="?route=homes/home">老人院</a>  </li>
               <li> <a href="?route=product/home">老年商城</a>  </li>
-             <li> <a href="?route=cms/home&cat_id=6">设置采购</a>  </li>
+             <li> <a href="?route=cms/home&cat_id=6">设备采购</a>  </li>
               <li> <a href="?route=cms/home&cat_id=1">招商引资</a>  </li>
             <!--
             <?php foreach ($categories as $category) { ?>
