@@ -1,6 +1,6 @@
 <?php
 // HTTP
-$http= "http://127.0.0.1/laoren";
+$http= "http://127.0.0.1:100/laoren";
 define("HTTP_SERVER", "$http/admin/");
 define("HTTP_CATALOG", "$http/");
 define("HTTP_IMAGE", "$http/image/");
@@ -28,7 +28,7 @@ define("DIR_CATALOG", "$dir/catalog/");
 define("DB_DRIVER", "mysql");
 define("DB_HOSTNAME", "localhost");
 define("DB_USERNAME", "root");
-define("DB_PASSWORD", "123456");
+define("DB_PASSWORD", "5840789");
 define("DB_DATABASE", "laoren");
 define("DB_PREFIX", "op_");
 
