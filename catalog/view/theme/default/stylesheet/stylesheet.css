@@ -1696,10 +1696,10 @@ a.button:hover, input.button:hover {
 .column-left_c li { background: url(../image/homes.png) -405px 11px no-repeat ; list-style: none; padding: 0; margin: 0; padding-left: 18px; border-bottom: 1px #ddd  dashed; line-height: 250%;  }
 
 .column-left_c li,  .column-left_c li a { font-size: 13px; font-weight: 600;}
-#homes_content  .list .item h1{  background: url(../image/homes.png) -211px  0; width: 126px; padding: 0; margin: 0; height: 33px;  line-height: 33px; font-size: 13px; }
+#homes_content  .list .item h1{  background: url(../image/layout.png) -390px  0; width: 320px; padding: 0; margin: 0; height: 33px;  line-height: 33px; font-size: 13px; }
 #homes_content  .list .item h1 b { padding-left: 30px;}
 #homes_content  .list .item h1 b, #homes_content  .list .item h1 b a{ color: #fff;}
-#homes_content  .list .item { width: 49%; float: left;margin-bottom: 6px; LINE-HEIGHT: 160%; height: 188px;}
+#homes_content  .list .item { width: 48%; float: left;margin-bottom: 6px; LINE-HEIGHT: 160%; height: 188px;}
 #homes_content  .list .item  { border: 1px #ddd solid;}
 #homes_content  .list .item div { border-top: 1px #ddd solid; padding: 10px;}
 #homes_content  .list .item div ul, #homes_content  .list .item div li { padding: 1px; margin: 1px; margin-left: 6px;}
