@@ -19,7 +19,7 @@ define("DIR_LANGUAGE", "$dir/admin/language/");
 define("DIR_TEMPLATE", "$dir/admin/view/template/");
 define("DIR_CONFIG", "$dir/system/config/");
 define("DIR_IMAGE", "$dir/image/");
-define("DIR_CACHE", "$dir/system/cache/");
+define("DIR_CACHE", "D:\\cache\\");
 define("DIR_DOWNLOAD", "$dir/download/");
 define("DIR_LOGS", "$dir/system/logs/");
 define("DIR_CATALOG", "$dir/catalog/");
