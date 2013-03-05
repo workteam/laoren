@@ -1691,8 +1691,8 @@ a.button:hover, input.button:hover {
 /*      addd     */
 .homes  #column-left h3 { background: url(../image/homes.png) ; height: 15px; width: 201px; padding: 0; margin: 0;   }
 .homes  #column-left h1 { background: url(../image/homes.png) 0 -39px ; height: 50px; width: 201px; padding: 0; margin: 0;   }
-.column-left_c { background: url(../image/column-left_c_bg.png) -0px -0px repeat-y  ; width: 204px; }
-.column-left_c ul{ margin: 10px; padding: 0;}
+.column-left_c { background: url(../image/column-left_c_bg.png) -0px -0px repeat-y  ; width: 201px; }
+.column-left_c ul{ margin: 0px; padding: 0;}
 .column-left_c li { background: url(../image/homes.png) -405px 11px no-repeat ; list-style: none; padding: 0; margin: 0; padding-left: 18px; border-bottom: 1px #ddd  dashed; line-height: 250%;  }
 
 .column-left_c li,  .column-left_c li a { font-size: 13px; font-weight: 600;}
