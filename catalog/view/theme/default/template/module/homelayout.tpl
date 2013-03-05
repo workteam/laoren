@@ -167,8 +167,8 @@
           <h3>
                   <table width="100%">
                         <tr>
-                             <td>    <b>老年旅游 </b> </td>
-                              <td  align="right">   <a href="?route=cms/home&cat_id=4" style="font-weight: 500;"> 更多 >> </a> </td>
+                             <td>    <b>推荐老人院</b> </td>
+                              <td  align="right">   <a href="?route=cms/home&cat_id=0" style="font-weight: 500;"> 更多 >> </a> </td>
                         </tr>
                   </table>
 
@@ -357,3 +357,4 @@
     </div>
     <?php }}?>
 </div>
+>>
