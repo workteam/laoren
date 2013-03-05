@@ -161,7 +161,7 @@
                                     <?php }?>
 
                                    <!--广告--->
-                                    <div class="item" <?php   echo  $i%2==1? " style='float:right; margin-left:5px;' ":""     ?>>
+                                    <div class="item" <?php   echo  $i%2==1? " style='float:light; margin-left:5px;' ":""     ?>>
                                                 <h1>  <b> <?php echo $val['name'] ?>   </b>     </h1>
                                                 <div>
                                                     <?php  if ( $i<3 ) { ?>
@@ -174,8 +174,7 @@
                                                           <br>
                                                           <a href="<?php  echo    isset($val["items"][0]) ?   $val["items"][0]["href"] :"";     ?>">
                                                            <?php  echo    isset($val["items"][0]) ?   $val["items"][0]["description"] :"";     ?>
-                                                          </a
-                                                    </p>
+                                                          </a></p>
 
                                                     <?php  if ( !empty($val["items"]) ) { ?>
                                                                 <ul>
