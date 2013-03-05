@@ -66,11 +66,12 @@ DD_belatedPNG.fix('#logo img');
 
            <table width="100%"  >
                   <tr>
-                         <td>    <?php if (!$logged) { ?>
-                             <?php echo $text_welcome; ?>
+                         <td>    <?php if ($logged) { ?>
+							 <?php echo $text_logged; ?>
+                             
                              <?php } else { ?>
-                             <?php echo $text_logged; ?>
-                             <?php } ?></td>
+                             <?php echo $text_welcome; ?>
+                             </td>
                          <td></td>
                           <td width="60" style="text-align: right">
                               邮箱地址：
@@ -89,7 +90,7 @@ DD_belatedPNG.fix('#logo img');
                           </td>
                           <td width="60">
                               <a href="?route=account/forgotten">  忘记密码?    </a>
-                          </td>
+                          </td><?php } ?>
                   </tr>
            </table>
         </form>
