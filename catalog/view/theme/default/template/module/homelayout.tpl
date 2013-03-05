@@ -1,5 +1,5 @@
 <div class="items" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
+<!--
         <div class="home_layout_1">
                     <h3> <b> 论坛 </b>
                               <a href="#" class="more"> 更多 </a>
@@ -15,7 +15,7 @@
                         </ul>
 
                     </div>
-        </div>
+        </div>-->
     <div class="home_layout_1">
 
         <h3> <b> <?php echo isset($cms[0])?$cms[0]:""; ?>  </b>
@@ -41,14 +41,7 @@
                                         </optgroup>
                                         <?php }?>
                                       </select></td>
-                                      <td width="10%" rowspan="2" >
-                                                <?php 
-                                                      $tpldir= dirname(__file__)."/../../";
-                                                      ///print_r( $tpldir ); 
-                                                ?>
-                                                <input type="image" src="catalog/view/theme/default/image/adv_search.png" />
-                                      			
-                                      </td>
+                                      
                                 </tr>
                                 <tr>
                                   <td nowrap="nowrap"><b>按环境:</b></td>
@@ -69,10 +62,18 @@
                                     <?php } } ?>
                                 </select>
                                   </td>
+                                  
                                 </tr>
                                 <tr>
                                   <td colspan="5">&nbsp;</td>
-                                </tr>
+                                </tr><td width="10%" rowspan="2" >
+                                                <?php 
+                                                      $tpldir= dirname(__file__)."/../../";
+                                                      ///print_r( $tpldir ); 
+                                                ?>
+                                                <input type="image" src="catalog/view/theme/default/image/adv_search.png" />
+                                      			
+                                      </td>
                       </table>
                     </form>
                      <div  class="fckdata"">
@@ -357,4 +358,4 @@
     </div>
     <?php }}?>
 </div>
->>
+>>>
