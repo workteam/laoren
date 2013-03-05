@@ -85,10 +85,10 @@ class ControllerCommonHeader extends Controller {
 		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
 		$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 		
-		if (isset($this->request->get['filter_name'])) {
-			$this->data['filter_name'] = $this->request->get['filter_name'];
+		if (isset($this->request->get['kw'])) {
+			$this->data['kw'] = $this->request->get['kw'];
 		} else {
-			$this->data['filter_name'] = '';
+			$this->data['kw'] = '';
 		}
 		
 		// Menu

@@ -1,25 +1,26 @@
 $(document).ready(function() {
 	/* Search */
 	$('.button-search').bind('click', function() {
-		url = $('base').attr('href') + 'index.php?route=product/search';
-				 
-		var filter_name = $('input[name=\'filter_name\']').attr('value');
+		url = $('base').attr('href') + 'index.php?route=homes/hospitals';
+					 
+		var filter_name = $('input[name=\'kw\']').attr('value');
 		
 		if (filter_name) {
-			url += '&filter_name=' + encodeURIComponent(filter_name);
+			url += '&kw=' + encodeURIComponent(filter_name);
 		}
+		
 		
 		location = url;
 	});
 	
-	$('#header input[name=\'filter_name\']').bind('keydown', function(e) {
+	$('#header input[name=\'kw\']').bind('keydown', function(e) {
 		if (e.keyCode == 13) {
-			url = $('base').attr('href') + 'index.php?route=product/search';
+			url = $('base').attr('href') + 'index.php?route=homes/hospitals';
 			 
-			var filter_name = $('input[name=\'filter_name\']').attr('value');
+			var filter_name = $('input[name=\'kw\']').attr('value');
 			
 			if (filter_name) {
-				url += '&filter_name=' + encodeURIComponent(filter_name);
+				url += '&kw=' + encodeURIComponent(filter_name);
 			}
 			
 			location = url;

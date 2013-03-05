@@ -84,6 +84,12 @@ class ControllerHomesHospitals   extends Controller {
                     }
                     ////die($where);
         }
+		if(	isset( $_GET ) ) {
+			
+			if (      isset( $_GET["kw"]) &&      $_GET["kw"]       &&     trim($_GET["kw"])<>'关键字'    && $kw=trim($_GET["kw"])      ) {
+                      $where.= "  and b.title  like '%$kw%' " ;
+                  }
+		}
         $laorenhomes=array();
         $limit = $this->config->get('config_admin_limit');
         $page=isset($_GET["page"])?$_GET["page"]:1;
