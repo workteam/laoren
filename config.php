@@ -20,6 +20,7 @@ define("DIR_LANGUAGE", "$dir/catalog/language/");
 define("DIR_TEMPLATE", "$dir/catalog/view/theme/");
 define("DIR_CONFIG", "$dir/system/config/");
 define("DIR_IMAGE", "$dir/image/");
+define("DIR_BBS", "$dir\\bbs\\");
 //define("DIR_IMAGE", "D:\\image\\");
 define("DIR_CACHE", "D:\\cache\\");
 define("DIR_DOWNLOAD", "$dir/download/");
