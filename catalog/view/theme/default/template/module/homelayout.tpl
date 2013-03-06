@@ -308,12 +308,12 @@
 <div class="adss">
     <table width="100%">
                      <tr>
-                          <td>   <?php if (   isset($ads[10])   ) {
+                          <td width="50%">   <?php if (   isset($ads[10])   ) {
                              foreach  ($ads[10] as $val) {
                              echo  "<a href='".$val['link']."'  target='_blank'> <img src='".HTTP_IMAGE.$val['image']."' border='0' WIDTH='100%'> </a> " ;
                               }
                               }?></td>
-                          <td> <?php if (   isset($ads[11])   ) {
+                          <td width="50%"> <?php if (   isset($ads[11])   ) {
                              foreach  ($ads[11] as $val) {
                              echo  "<a href='".$val['link']."'  target='_blank'> <img src='".HTTP_IMAGE.$val['image']."' border='0' WIDTH='100%'> </a> " ;
                               }
@@ -358,4 +358,4 @@
     </div>
     <?php }}?>
 </div>
->>>
+>>>>
