@@ -1663,10 +1663,10 @@ a.button:hover, input.button:hover {
 /*//////ADD////////**/
 .home_layout_1 { width: 320px; height: 200px; background: #eee; float: left; margin-right: 6px;}
 .item_1 { width: 315px; background: #fff; height: 157px; margin: 0 auto;}
-.home_layout_1   h3{ background: url("../image/layout.png") 0 0  #71A906; padding: 0; margin: 0; height: 36px; line-height: 33px; }
+.home_layout_1   h3{ background: url("../image/layout.png") 0 0 ; padding: 0; margin: 0; height: 34px; line-height: 33px; }
 .home_layout_1   h3 b  ,.item3  h3 b{ padding-left:  33px;}
 .home_layout_1   h3 b , .home_layout_1      h3 b a   ,.item3 b,.item3 b a     { color: #fff;}
-.home_layout_1  .more { text-indent: -999999999px; display: block; float: right; width: 60px; height: 30px; }
+.home_layout_1  .more {display: block; float: right; width: 60px; height: 30px; color:#ffffff }
 .items { margin-bottom: 3px; }
 .items  ,  .items  table  td { line-height: 160%;}
 .fix{ clear: both; height: 5px;}
