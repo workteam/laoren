@@ -101,19 +101,49 @@
 
                                     </select>
                                     <script type="text/javascript">
-                                                var  zone_id='<?php echo   isset($zone_id)?$zone_id :0;  ?>';
-                                                function     getzone(id){
-                                                             ////   alert(id);
-                                                    $.get( location.href+"&country_id="+ id ,function(msg){
-                                                            $("select[name='zone_id']").html("");
-                                                            var msg=eval(msg);
-                                                            for (  i=0; i<msg.length; i++  ) {
-                                                                var  sel=    msg[i]['zone_id']==zone_id?" selected='selected'  ":""
-                                                                $("select[name='zone_id']").append(" <option  "+sel+"  value='"+msg[i]['zone_id']+"' > "+msg[i]['name']+" </option> ");
-                                                            }
-                                                    } ) ;
-                                                }
-                                                $("select[name='country_id']").trigger('change');
+									
+$('select[name=\'country_id\']').bind('change', function() {
+	$.ajax({
+		url: '../index.php?route=account/register/country&country_id=' + this.value,
+		dataType: 'json',
+		beforeSend: function() {
+			$('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="view/image/loading.gif" alt="" /></span>');
+		},
+		complete: function() {
+			$('.wait').remove();
+		},			
+		success: function(json) {
+			if (json['postcode_required'] == '1') {
+				$('#postcode-required').show();
+			} else {
+				$('#postcode-required').hide();
+			}
+			
+			html = '<option value="">请选择</option>';
+			
+			if (json['zone'] != '') {
+				for (i = 0; i < json['zone'].length; i++) {
+        			html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+	    			
+//					if (json['zone'][i]['zone_id'] == '<?php echo $zone_id; ?>') {
+//	      				html += ' selected="selected"';
+//	    			}
+	
+	    			html += '>' + json['zone'][i]['name'] + '</option>';
+				}
+			} else {
+				html += '<option value="0" selected="selected">无</option>';
+			}
+			
+			$('select[name=\'zone_id\']').html(html);
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+});
+
+$('select[name=\'country_id\']').trigger('change');
                                     </script>
                            </td>
                     </tr>
@@ -241,6 +271,8 @@
   </div>
 </div>
 <script type="text/javascript" src="view/javascript/ckeditor/ckeditor.js"></script> 
+
+
 <script type="text/javascript"><!--
 <?php foreach ($languages as $language) { ?>
 CKEDITOR.replace('description<?php echo $language['language_id']; ?>', {
@@ -314,5 +346,5 @@ $('.time').timepicker({timeFormat: 'h:m'});
 $('#tabs a').tabs(); 
 $('#languages a').tabs(); 
 $('#vtab-option a').tabs();
-//--></script> 
+//--></script>
 <?php echo $footer; ?>
