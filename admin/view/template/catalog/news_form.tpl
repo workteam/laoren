@@ -103,6 +103,7 @@
                                     <script type="text/javascript">
 									
 $('select[name=\'country_id\']').bind('change', function() {
+
 	$.ajax({
 		url: '../index.php?route=account/register/country&country_id=' + this.value,
 		dataType: 'json',
@@ -142,6 +143,18 @@ $('select[name=\'country_id\']').bind('change', function() {
 		}
 	});
 });
+	                                                var  zone_id='<?php echo   isset($zone_id)?$zone_id :0;  ?>';
+                                                function     getzone(id){
+                                                             ////   alert(id);
+                                                    $.get( location.href+"&country_id="+ id ,function(msg){
+                                                            $("select[name='zone_id']").html("");
+                                                            var msg=eval(msg);
+                                                            for (  i=0; i<msg.length; i++  ) {
+                                                                var  sel=    msg[i]['zone_id']==zone_id?" selected='selected'  ":""
+                                                                $("select[name='zone_id']").append(" <option  "+sel+"  value='"+msg[i]['zone_id']+"' > "+msg[i]['name']+" </option> ");
+                                                            }
+                                                    } ) ;
+                                                }
 
 $('select[name=\'country_id\']').trigger('change');
                                     </script>
