@@ -20,10 +20,20 @@ class ModelAccountCustomer extends Model {
 		$salt=WindUtility::generateRandStr(6);
 		
 		$passwd=WindidUtility::buildPassword($data['password'],$salt);
-		
-		$this->db->query("insert into bbs_user (username,email,password,memberid) values ('".$this->db->escape($data['firstname'])."','".$this->db->escape($data['email'])."','".$this->db->escape($passwd)."',8)");
-		
+				
 		$this->db->query("insert into bbs_windid_user (username,email,password,salt) values ('".$this->db->escape($data['firstname'])."','".$this->db->escape($data['email'])."','".$this->db->escape($passwd)."','".$salt."')");
+
+		$customer_id = $this->db->getLastId();
+
+		$this->db->query("insert into bbs_user (uid,username,email,password,memberid) values (".$customer_id.",'".$this->db->escape($data['firstname'])."','".$this->db->escape($data['email'])."','".$this->db->escape($passwd)."',8)");
+
+		$this->db->query("insert into bbs_user_data (uid) values (".$customer_id.")");
+
+		$this->db->query("insert into bbs_user_info (uid) values (".$customer_id.")");
+
+		$this->db->query("insert into bbs_windid_user_data (uid) values (".$customer_id.")");
+
+		$this->db->query("insert into bbs_windid_user_info (uid) values (".$customer_id.")");
 		
 		$customer_id = $this->db->getLastId();
 			
