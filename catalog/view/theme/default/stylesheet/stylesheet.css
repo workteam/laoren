@@ -1661,12 +1661,20 @@ a.button:hover, input.button:hover {
 	margin-bottom: 20px;
 }
 /*//////ADD////////**/
-.home_layout_1 { width: 320px; height: 200px; background: #eee; float: left; margin-right: 6px;}
-.item_1 { width: 315px; background: #fff; height: 157px; margin: 0 auto;}
-.home_layout_1   h3{ background: url("../image/layout.png") 0 0 ; padding: 0; margin: 0; height: 34px; line-height: 33px; }
+.home_layout_1 { width: 645px; height: 200px; background: #eee; float: left; margin-right: 6px;}
+.item_1 { width: 640px; background: #fff; height: 157px; margin: 0 auto;}
+.home_layout_1   h3{ background: url("../image/layout.png") 0 -106px ; padding: 0; margin: 0; height: 34px; line-height: 33px; }
 .home_layout_1   h3 b  ,.item3  h3 b{ padding-left:  33px;}
 .home_layout_1   h3 b , .home_layout_1      h3 b a   ,.item3 b,.item3 b a     { color: #fff;}
 .home_layout_1  .more {display: block; float: right; width: 60px; height: 30px; color:#ffffff }
+
+.home_layout_r { width: 320px; height: 200px; background: #eee; float: left; margin-right: 6px;}
+.item_r { width: 315px; background: #fff; height: 157px; margin: 0 auto;}
+.home_layout_r   h3{ background: url("../image/layout.png") 0 0 ; padding: 0; margin: 0; height: 34px; line-height: 33px; }
+.home_layout_r   h3 b  ,.item3  h3 b{ padding-left:  33px;}
+.home_layout_r   h3 b , .home_layout_r      h3 b a   ,.item3 b,.item3 b a     { color: #fff;}
+.home_layout_r  .more {display: block; float: right; width: 60px; height: 30px; color:#ffffff }
+
 .items { margin-bottom: 3px; }
 .items  ,  .items  table  td { line-height: 160%;}
 .fix{ clear: both; height: 5px;}
@@ -1681,6 +1689,11 @@ a.button:hover, input.button:hover {
 .item_1 h4{ padding: 0; margin: 0; line-height: 200%;}
 .item_1  ul, .item_1  li { padding: 0; margin: 5px; }
 .item_1  li { list-style-image:url("../image/arrow-right.png"); margin-left: 12px; }
+
+.item_r h4{ padding: 0; margin: 0; line-height: 200%;}
+.item_r  ul, .item_r  li { padding: 0; margin: 5px; }
+.item_r  li { list-style-image:url("../image/arrow-right.png"); margin-left: 12px; }
+
 .items hr{border: 1px #ddd   dashed; }
 .arr { background: url(../image/arr.png) center left no-repeat; padding-left: 13px; padding-top: 1px;}
 .link_title { color: #fff; font-weight: 600; font-size: 14px;}
@@ -1696,7 +1709,7 @@ a.button:hover, input.button:hover {
 .column-left_c li { background: url(../image/homes.png) -405px 11px no-repeat ; list-style: none; padding: 0; margin: 0; padding-left: 18px; border-bottom: 1px #ddd  dashed; line-height: 250%;  }
 
 .column-left_c li,  .column-left_c li a { font-size: 13px; font-weight: 600;}
-#homes_content  .list .item h1{  background: url(../image/layout.png) -390px  0; width: 320px; padding: 0; margin: 0; height: 33px;  line-height: 33px; font-size: 13px; }
+#homes_content  .list .item h1{  background: url(../image/layout.png) 0px  0; width: 320px; padding: 0; margin: 0; height: 33px;  line-height: 33px; font-size: 13px; }
 #homes_content  .list .item h1 b { padding-left: 30px;}
 #homes_content  .list .item h1 b, #homes_content  .list .item h1 b a{ color: #fff;}
 #homes_content  .list .item { width: 48%; float: left;margin-bottom: 6px; LINE-HEIGHT: 160%; height: 188px;}

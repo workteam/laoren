@@ -27,9 +27,10 @@
                     <form  action="?route=homes/hospitals" method="post" enctype="application/x-www-form-urlencoded">
                       <table width="100%">
                                 <tr>
-                                      <td width="6%" nowrap="nowrap"><b>关键字:</b></td>
-                                      <td width="12%" colspan="2"><input name="kw"  style="width:100px;"/></td>
-                                      <td width="72%"><select  name="zone_id">
+                                      <td width="12%" nowrap="nowrap"><b>关键字:</b></td>
+                                      <td width="30%" colspan="2"><input name="kw"  style="width:100px;"/></td>
+                                      <td width="72%">
+                                      <select  name="zone_id">
                                         <option  value="0"> 地区 </option>
                                         <?php foreach  ( $countrys as $val ) { ?>
                                         <optgroup label="<?php  echo $val['name']?>">
@@ -41,6 +42,14 @@
                                         </optgroup>
                                         <?php }?>
                                       </select></td>
+                                      <td width="10%" rowspan="2" >
+                                                <?php 
+                                                      $tpldir= dirname(__file__)."/../../";
+                                                      ///print_r( $tpldir ); 
+                                                ?>
+                                                <input type="image" src="catalog/view/theme/default/image/adv_search.png" />
+                                      			
+                                      </td>
                                       
                                 </tr>
                                 <tr>
@@ -55,7 +64,7 @@
                                 </select></td>
                                   <td nowrap="nowrap"><b>价格:</b></td>
                                   <td>
-                                  <select name="config_homes_pri">
+                                  <select name="config_homes_pri" style=" width:100px">
                                     <option value="-1"> 不限 </option>
                                     <?php if ( isset($config_homes_pri) ) {       foreach  ($config_homes_pri as  $key =>  $val) {     ?>
                                              <option  value="<?php echo $key; ?>"> <?php echo $val  ?> </option>
@@ -66,14 +75,7 @@
                                 </tr>
                                 <tr>
                                   <td colspan="5">&nbsp;</td>
-                                </tr><td width="10%" rowspan="2" >
-                                                <?php 
-                                                      $tpldir= dirname(__file__)."/../../";
-                                                      ///print_r( $tpldir ); 
-                                                ?>
-                                                <input type="image" src="catalog/view/theme/default/image/adv_search.png" />
-                                      			
-                                      </td>
+                                </tr>
                       </table>
                     </form>
                      <div  class="fckdata"">
@@ -83,11 +85,11 @@
                 </ul>
         </div>
     </div>
-    <div class="home_layout_1">
+    <div class="home_layout_r">
         <h3> <b> 老年商城 </b>
             <a href="?route=product/home" class="more"> 更多 </a>
         </h3>
-        <div class="item_1">
+        <div class="item_r">
                  <ul>
 					      <table width="100%">
                                 <?php if ( isset($shop_cats[0]) ) { ?>
@@ -358,4 +360,3 @@
     </div>
     <?php }}?>
 </div>
->>>>
