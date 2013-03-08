@@ -85,7 +85,7 @@
                                 <tr>
                                       <td style="padding-top: 5px;">
                                           <h2 style="font-size: 13px;border-bottom: 1px #ddd solid;padding-bottom: 5px;">
-                                                 <b style="  padding-left: 5px; margin-left: 3px; ">最新文章 </b>
+                                                 <b style="  padding-left: 5px; margin-left: 3px; ">最新老人院</b>
                                           </h2>
                                       </td>
                                 </tr>
