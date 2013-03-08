@@ -34,7 +34,7 @@ $(document).ready(function() {
 <table width="980">
      <tr>
          <?php foreach  (  $ads as $key=>$val ) { ?>
-         <td width="50%" style="padding-right: 5px;">
+         <td width="100%" style="padding-right: 5px;">
              <div class="slider-wrapper theme-default">
                     <div id="slider<?php echo $key; ?>" class="nivoSlider">
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
               </div>
          </td>
-         <?php }?>
+         <?php break;}?>
 
      </tr>
 </table>
