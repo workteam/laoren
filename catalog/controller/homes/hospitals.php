@@ -116,7 +116,10 @@ class ControllerHomesHospitals   extends Controller {
         $pagination->limit = $this->config->get('config_admin_limit');
         $pagination->text = $this->language->get('text_pagination');
         $zone_id=isset($_GET["zone_id"]) ? $_GET["zone_id"]:"";
-        $pagination->url = HTTPS_SERVER . "?route=homes/hospital&zone_id=$zone_id&token=". $this->session->data['token']  . '&page={page}';
+        
+        //$pagination->url = HTTPS_SERVER . "?route=homes/hospital&zone_id=$zone_id&token=". $this->session->data['token']  . '&page={page}';
+        
+            $pagination->url = HTTPS_SERVER . "?route=homes/hospital&zone_id=$zone_id&page={page}";
         $this->data['pagination'] = $pagination->render();
 
        //   分页
